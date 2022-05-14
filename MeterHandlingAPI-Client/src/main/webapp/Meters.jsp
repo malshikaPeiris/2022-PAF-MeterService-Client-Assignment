@@ -15,16 +15,16 @@ pageEncoding="ISO-8859-1"%>
 
 <div class="container"><div class="row"><div class="col-6">
 
-	<h1>Meter Management </h1>
+	<h1>Meter Handling And Power Consumption Management </h1>
 
 	<form id="formMeter" name="formMeter">
- 		Meter Account No:
+ 		 Customer Account No:
  		<input id="account_no" name="account_no" type="text" class="form-control form-control-sm">
  		<br> 
- 		Meter name:
+ 		Customer Name:
 		<input id="name" name="name" type="text" class="form-control form-control-sm">
  		<br> 
- 		Address:
+ 		Customer Address:
  		<input id="address" name="address" type="text" class="form-control form-control-sm">
  		<br> 
  		Units:
@@ -35,7 +35,7 @@ pageEncoding="ISO-8859-1"%>
  		<br>
  		
  		
- 		<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
+ 		<input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-success">
  		<input type="hidden" id="hidMeterIDSave" name="hidMeterIDSave" value="">
 	</form>
 	

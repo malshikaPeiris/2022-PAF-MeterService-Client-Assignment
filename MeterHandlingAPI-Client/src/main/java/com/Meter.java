@@ -61,11 +61,15 @@ public class Meter {
 					output += "<td>" + date + "</td>";
 					
 					 //buttons
-			          output += "<td><input name='btnUpdate' " + " type='button' value='Update'></td>" + "<td><form method='post' action='meter.jsp'>" + "<input name='btnRemove' " + " type='submit' value='Remove'>" + "<input name='id' type='hidden' " + " value='" + id + "'>" + "</form></td></tr>"; } con.close();
-			          
-				
-				con.close();
+			         // output += "<td><input name='btnUpdate' " + " type='button'  value='Update' Style=\"margin:10px;\" class='btnUpdate btn btn-primary'></td>" +  "<td><form method='post' action='meter.jsp'>" + "&nbsp;"+ " <input name='btnRemove' " + " type='submit' value='Remove' Style=\"margin:10px;\" class='btnRemove btn btn-danger'>" +  "<td><form method='post' action='meter.jsp'>"+"<input name='id' type='hidden' " + " value='"  + id + "'>"  +"</form></td></tr>"; } con.close();
+					output += "<td><input name='btnUpdate' type='button' value='Update'"
+							 + "class='btnUpdate btn btn-secondary'></td>"
+							 + "<td><input name='btnRemove' type='button' value='Remove' "
+							 + "class='btnRemove btn btn-danger' data-id='" + id + "'></td></tr>";
 
+			          
+				}con.close();
+         
 				output += "</table>";
 			}
 
@@ -176,7 +180,7 @@ public class Meter {
 			 
 			 catch (Exception e)
 			 {
-				 output = "{\"status\":\"error\", \"data\": \"Error while deleting the M.\"}";
+				 output = "{\"status\":\"error\", \"data\": \"Error while deleting.\"}";
 				 System.err.println(e.getMessage());
 			 }
 			 
